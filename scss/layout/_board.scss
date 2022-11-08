@@ -1,0 +1,37 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.board-cards {
+  flex: 1;
+  padding: 1rem 1.875rem;
+
+  .board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .left-side-board {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+
+        .flex-edit-fav {
+            @include flexCenter;
+            gap: 0.5rem;
+        }
+    }
+  }
+
+  h1 {
+    font-size: $huge-font-size;
+    font-weight: $font-weight-900;
+    color: $board-title-color;
+  }
+
+  .board-lists{
+    display: flex;
+    gap: 30px;
+  }
+}

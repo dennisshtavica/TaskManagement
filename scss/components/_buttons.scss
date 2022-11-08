@@ -1,0 +1,48 @@
+@import "../abstracts/variables";
+
+.create-btn {
+  width: 4.538rem;
+  height: 1.7rem;
+  background-color: $csa-btn-bg;
+  color: $primary-font-color;
+  border-radius: 5px;
+  font-weight: $font-weight-600;
+  font-size: 0.725rem;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  button {
+    width: auto;
+    height: 2rem;
+    background: $delete-btn-color;
+    outline: none;
+    border: none;
+    color: $primary-font-color;
+    border-radius: 5px;
+    box-shadow: -4px 4px 0px rgba(255, 98, 98, 0.49);
+    padding: 0 1rem;
+    cursor: pointer;
+      transition: 0.3s;
+
+
+    &:hover{
+      box-shadow: none;
+      transform: scale(1.09);
+      transition: 0.2s;
+    }
+  }
+}
+
+.add-another-listBtn {
+  button {
+    width: 250px;
+    height: 2.5rem;
+    background: $csa-btn-bg;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: $primary-font-color;
+  }
+}

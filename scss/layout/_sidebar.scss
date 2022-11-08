@@ -1,0 +1,48 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.sidebar {
+  width: 13.5rem;
+  height: 100%;
+  min-height: 100%;
+//   position: absolute;
+  background-color: $nav-side-bar;
+  color: $primary-font-color;
+  padding-left: 1.875rem;
+  padding-top: 1.875rem;
+  padding-right: 1rem;
+  border-right: 1px solid #4b4b4b;
+
+  .your-boards-row {
+    h3 {
+      font-weight: $font-weight-600;
+      font-size: 0.938rem;
+      padding-bottom: 1.8rem;
+    }
+  }
+
+  .sidebar-boards {
+    height: auto;
+    margin-bottom: 2rem;
+
+    li {
+      margin-bottom: 0.3rem;
+      padding: 0.3rem;
+      font-size: 0.9rem;
+
+      &:hover {
+        background-color: #4b4b4b;
+        border-radius: 5px;
+      }
+    }
+
+  }
+
+  .favorite-boards {
+    h5 {
+      font-weight: $font-weight-600;
+      font-size: 0.938rem;
+      color: $favorite-color;
+    }
+  }
+}

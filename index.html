@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./js/createDropwdown.js" defer></script>
+    <script src="./js/addBoard.js" defer></script>
+    <!-- <script src="./js/changePages.js" defer></script> -->
+  </head>
+  <body>
+
+    <header>
+      <div class="left-side">
+        <img src="./images/logoD.svg" alt="" />
+        <button class="create-btn">Create</button>
+        <div class="create-dropdown closeDD">
+          <div class="flex-title">
+            <h4 id="create-board-h4">Create board</h4>
+            <img src="./images/X.svg" class="x-image" alt="" />
+          </div>
+          <p>A board is made up of cards on lists.</p>
+        </div>
+          <div class="create-board-dropdown closeDD">
+            <div class="flex-title">
+                <h4 id="create-board-h4">Board title</h4>
+                <img src="./images/X.svg" class="x-image2" alt="" />
+            </div>
+            <input type="text" id="input-title-value" placeholder="Type here">
+            <button id="set-title-value">Add board</button>
+          </div>
+      </div>
+      <div class="right-side">
+        <input type="search" name="Search" id="" placeholder="Search" />
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="sidebar">
+        <div class="flex-column">
+          <div class="your-boards-row">
+            <h3>Your boards</h3>
+          </div>
+          <div class="sidebar-boards">
+            <ul class="sidebar-lists">
+               
+            </ul>
+          </div>
+          <div class="favorite-boards">
+            <h5>Favorite</h5>
+            <div class="favorite-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="board-cards">
+        <!-- <div class="container">
+          <div class="board-header">
+            <div class="left-side-board">
+              <div class="board-title">
+                <h1>Board 1</h1>
+              </div>
+              <div class="flex-edit-fav">
+                <div>
+                  <input
+                    type="image"
+                    src="./images/editH1titleBtn.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <input
+                    type="image"
+                    src="./images/addToFavoritesBtn.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="right-side-deleteBoard-btn">
+              <div class="delete-btn">
+                <button>Delete board</button>
+              </div>
+            </div>
+          </div>
+          <div class="board-lists">
+            <div class="add-another-listBtn">
+              <button>Add another list</button>
+              <div class="enter-list-title">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </main>
+  </body>
+</html>
