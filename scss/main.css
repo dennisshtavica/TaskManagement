@@ -82,7 +82,6 @@ header .right-side input::-webkit-search-decoration, header .right-side input::-
   margin-bottom: 2rem;
 }
 .sidebar .sidebar-boards li {
-  margin-bottom: 0.3rem;
   padding: 0.3rem;
   font-size: 0.9rem;
 }
@@ -136,6 +135,50 @@ main {
   display: flex;
   gap: 30px;
 }
+.board-cards .board-lists .add-another-listCtn {
+  position: relative;
+}
+.board-cards .board-lists .add-another-listCtn .enter-list-title {
+  width: 250px;
+  height: auto;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.board-cards .board-lists .add-another-listCtn .enter-list-title input {
+  width: 203px;
+  height: 26px;
+  background: #ffffff;
+  border: 1px solid #bababa;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+.board-cards .board-lists .add-another-listCtn .enter-list-title button {
+  width: 75px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: #ffffff;
+}
+.board-cards .board-lists .add-another-listCtn .main-card {
+  width: 250px;
+  height: auto;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.board-cards .board-lists .add-another-listCtn .listBtns {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .create-btn {
   width: 4.538rem;
@@ -168,7 +211,7 @@ main {
   transition: 0.2s;
 }
 
-.add-another-listBtn button {
+.add-another-listBtn {
   width: 250px;
   height: 2.5rem;
   background: #464646;

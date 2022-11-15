@@ -4,6 +4,10 @@ const xImage = document.querySelector(".x-image");
 const xImage2 = document.querySelector(".x-image2");
 const createBoardH4 = document.getElementById("create-board-h4");
 const secondDD = document.querySelector(".create-board-dropdown");
+const addAnotherListBtn = document.querySelector(".add-another-listBtn")
+// const mainCard = document.querySelector(".main-card");
+// const addList = document.querySelector(".add-list");
+
 
 function openCreateBtnDD() {
   if (dropdown.classList.contains("closeDD")) {
@@ -29,7 +33,27 @@ function openH4Board() {
   }
 }
 
+function openAddAnotherListBtn(){
+  if(enterListTitle.classList.contains("closeDD")){
+    enterListTitle.classList.remove("closeDD")
+    enterListTitle.classList.add("openDD")
+  }
+}
+
+function closeModal(){
+  enterListTitle.classList.add("closeDD");
+  enterListTitle.classList.remove("openDD");
+}
+
+document.addEventListener("keydown", function (e) {
+  if (e.key == "Escape" && !enterListTitle.classList.contains("closeDD")) {
+    closeModal();
+  }
+});
+
+
 createBtn.addEventListener("click", openCreateBtnDD);
 xImage.addEventListener("click", openCreateBtnDD);
 xImage2.addEventListener("click", openH4Board);
 createBoardH4.addEventListener("click", openH4Board);
+addAnotherListBtn.addEventListener("click", openAddAnotherListBtn)

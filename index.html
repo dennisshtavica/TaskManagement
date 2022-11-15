@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./scss/main.css" />
-    <script src="./js/createDropwdown.js" defer></script>
+    <script src="./js/createDropdown.js" defer></script>
     <script src="./js/addBoard.js" defer></script>
     <!-- <script src="./js/changePages.js" defer></script> -->
   </head>
   <body>
-
     <header>
       <div class="left-side">
         <img src="./images/logoD.svg" alt="" />
@@ -23,14 +22,14 @@
           </div>
           <p>A board is made up of cards on lists.</p>
         </div>
-          <div class="create-board-dropdown closeDD">
-            <div class="flex-title">
-                <h4 id="create-board-h4">Board title</h4>
-                <img src="./images/X.svg" class="x-image2" alt="" />
-            </div>
-            <input type="text" id="input-title-value" placeholder="Type here">
-            <button id="set-title-value">Add board</button>
+        <div class="create-board-dropdown closeDD">
+          <div class="flex-title">
+            <h4 id="create-board-h4">Board title</h4>
+            <img src="./images/X.svg" class="x-image2" alt="" />
           </div>
+          <input type="text" id="input-title-value" placeholder="Type here" />
+          <button id="set-title-value">Add board</button>
+        </div>
       </div>
       <div class="right-side">
         <input type="search" name="Search" id="" placeholder="Search" />
@@ -44,9 +43,7 @@
             <h3>Your boards</h3>
           </div>
           <div class="sidebar-boards">
-            <ul class="sidebar-lists">
-               
-            </ul>
+            <ul class="sidebar-lists"></ul>
           </div>
           <div class="favorite-boards">
             <h5>Favorite</h5>
@@ -56,7 +53,7 @@
       </section>
 
       <section class="board-cards">
-        <!-- <div class="container">
+        <div class="container">
           <div class="board-header">
             <div class="left-side-board">
               <div class="board-title">
@@ -86,14 +83,19 @@
             </div>
           </div>
           <div class="board-lists">
-            <div class="add-another-listBtn">
-              <button>Add another list</button>
-              <div class="enter-list-title">
-                <input type="text" name="" id="" />
+            <div class="add-another-listCtn">
+              <button class="add-another-listBtn">Add another list</button>
+              <div class="enter-list-title closeDD">
+                <input type="text" name="" id="enter-list-input" />
+                <button id="add-list">Add list</button>
               </div>
-            </div>
+              <div class="main-card closeDD">
+                <!-- <h3 class="card-input-h3"></h3>
+                <input type="text" placeholder="Add a card"> -->
+              </div>
+            </div>  
           </div>
-        </div> -->
+        </div>
       </section>
     </main>
   </body>

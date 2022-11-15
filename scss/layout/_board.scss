@@ -12,15 +12,15 @@
     margin-bottom: 1rem;
 
     .left-side-board {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 2rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
 
-        .flex-edit-fav {
-            @include flexCenter;
-            gap: 0.5rem;
-        }
+      .flex-edit-fav {
+        @include flexCenter;
+        gap: 0.5rem;
+      }
     }
   }
 
@@ -30,8 +30,56 @@
     color: $board-title-color;
   }
 
-  .board-lists{
+  .board-lists {
     display: flex;
     gap: 30px;
+
+    .add-another-listCtn {
+      position: relative;
+
+      .enter-list-title {
+        width: 250px;
+        height: auto;
+        background-color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        input {
+          width: 203px;
+          height: 26px;
+          background: $primary-font-color;
+          border: 1px solid #bababa;
+          border-radius: 3px;
+          margin-bottom: 0.5rem;
+        }
+
+        button {
+          width: 75px;
+          height: 30px;
+          border-radius: 5px;
+          background-color: black;
+          color: $primary-font-color;
+        }
+      }
+
+      .main-card {
+        width: 250px;
+        height: auto;
+        background-color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .listBtns{
+        width: 10rem;
+        @include flexCenter;
+      }
+    }
   }
 }
