@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./scss/main.css" />
     <script src="./js/createDropdown.js" defer></script>
-    <script src="./js/addBoard.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <!-- <script src="./js/addBoard.js" defer></script> -->
     <!-- <script src="./js/changePages.js" defer></script> -->
   </head>
   <body>
@@ -27,8 +28,11 @@
             <h4 id="create-board-h4">Board title</h4>
             <img src="./images/X.svg" class="x-image2" alt="" />
           </div>
-          <input type="text" id="input-title-value" placeholder="Type here" />
-          <button id="set-title-value">Add board</button>
+          <input maxlength="40" type="text" id="input-title-value" placeholder="Type here" />
+          <div class="btn-empty">
+            <button id="set-title-value">Add board</button>
+            <p id="board-title-empty"></p>
+          </div>
         </div>
       </div>
       <div class="right-side">
@@ -37,13 +41,15 @@
     </header>
 
     <main id="main">
-      <section class="sidebar">
+      <section class="sidebar" id="sidebar">
         <div class="flex-column">
           <div class="your-boards-row">
             <h3>Your boards</h3>
           </div>
           <div class="sidebar-boards">
-            <ul class="sidebar-lists"></ul>
+            <ul class="sidebar-lists" id="sidebar-lists">
+              <!-- Boards will be listed here -->
+            </ul>
           </div>
           <div class="favorite-boards">
             <h5>Favorite</h5>
@@ -57,7 +63,7 @@
           <div class="board-header">
             <div class="left-side-board">
               <div class="board-title">
-                <h1>Board 1</h1>
+                <h1 id="title">Board 1</h1>
               </div>
               <div class="flex-edit-fav">
                 <div>
@@ -78,21 +84,24 @@
             </div>
             <div class="right-side-deleteBoard-btn">
               <div class="delete-btn">
-                <button>Delete board</button>
+                <button id="delete-button">Delete board</button>
               </div>
             </div>
           </div>
-          <div class="board-lists">
-            <div class="add-another-listCtn">
-              <button class="add-another-listBtn">Add another list</button>
+          <div class="board-lists" id="board-container">
+            <div class="add-another-listCtn" id="cards-container">
+              <div id="add-card">
+                <input type="text" class="add-another-listBtn" id="add-card-text" name="add-card" placeholder="Add another list">
+              </div>
+              <!-- <button class="add-another-listBtn">Add another list</button>
               <div class="enter-list-title closeDD">
-                <input type="text" name="" id="enter-list-input" />
+                <input maxlength="40" type="text" name="" id="enter-list-input" />
                 <button id="add-list">Add list</button>
               </div>
-              <div class="main-card closeDD">
-                <!-- <h3 class="card-input-h3"></h3>
-                <input type="text" placeholder="Add a card"> -->
-              </div>
+              <div class="closeDD">
+                <h3 class="card-input-h3"></h3>
+                <input type="text" placeholder="Add a card">
+              </div> -->
             </div>  
           </div>
         </div>

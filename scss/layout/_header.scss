@@ -15,6 +15,21 @@ header {
     gap: 2.3rem;
   }
 
+  .btn-empty {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #set-title-value{
+      cursor: pointer;
+    }
+
+    #board-title-empty{
+      font-size: 0.7rem;
+      color: #ff5151;
+    }
+  }
+
   img {
     width: 24px;
   }

@@ -41,7 +41,12 @@
   border: none;
   outline: none;
   border-radius: 10px;
-  color: $primary-font-color;
+  padding: 0.6rem;
+  color: white;
+  
+  &::placeholder {
+      color: rgb(170, 170, 170);
+  }
 }
 
 // .moveLeft {

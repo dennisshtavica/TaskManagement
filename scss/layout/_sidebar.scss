@@ -21,17 +21,25 @@
     }
   }
 
+  .is-active{
+    background-color: #232941;
+    border-radius: 5px;
+  }
+
   .sidebar-boards {
     height: auto;
     margin-bottom: 2rem;
 
+    
+
     li {
-      // margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
       padding: 0.3rem;
       font-size: 0.9rem;
+      cursor: pointer;
 
       &:hover {
-        background-color: #4b4b4b;
+        background-color: #232941;
         border-radius: 5px;
       }
     }
